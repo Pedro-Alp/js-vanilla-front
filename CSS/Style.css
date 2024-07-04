@@ -455,7 +455,17 @@ nav{
 }
 /*Fin sección Servicios*/
 /*Inicio Sección Extras*/
+#extras::before {
+    content: "";
+    position: absolute;
+    top: 4%; 
+    height: 10px;
+    background-color: #1CC3B2;
+    transform: rotate(358deg);
+    width: 100%;
+}
 #extras{
+	position: relative;
 	height: 950px;
 	width: 100%;
 	background-color: #F2EDE0;
