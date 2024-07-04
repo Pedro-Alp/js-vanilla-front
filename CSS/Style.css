@@ -8,7 +8,7 @@
 #encabezado{
 	height: 1000px;
 	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Media/Hero.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Media/Hero.webp");
 	background-size: cover;
 	overflow: hidden;
 }
@@ -346,7 +346,7 @@ nav{
 #aboutus{
 	height: 950px;
 	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/fondoaboutus.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/fondoaboutus.webp");
 	background-size: cover;
 	overflow: hidden;
 }
@@ -491,7 +491,7 @@ nav{
 #info{
 	height: 950px;
 	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Media/Fondo+info.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Media/Fondo+info.webp");
 	background-size: cover;
 	overflow: hidden;
 }
