@@ -79,19 +79,7 @@ function esconderMostrarMenu() {
 	posPreviaScroll = posActualScroll;
 }
 // Inicio Lightbox
-// function modalLight(){
-// 	document.getElementById("modalLight").style.display="block";
-// 	document.documentElement.style.overflow="hidden";
 
-// 	var listImgG = document.getElementsByClassName("imgGal");
-	
-	
-// 	for(var i = 0; i<listImgG.length; i++){
-// 		listRutaImgG.push(listImgG[i].src);
-// 	}
-// 	// console.log(listRutaImgG);
-// 	document.getElementById("imageToShow").innerHTML="<img class='imageLight' src='Media/ImgG1.jpg'>";
-// }
 var listRutaImgG = [];
 var numImg=0;
 function readyLight(){
@@ -116,7 +104,6 @@ function readyLight(){
 	function closeLight(){
 		window.addEventListener("click", function(event){
 			if(!event.target.matches(".imageLight") && !event.target.matches(".imgGal")&& !event.target.matches(".lbButtons")&& !event.target.matches(".fa-solid")){
-				// console.log("cerrar");
 				document.getElementById("modalLight").style.display="none";
 				document.documentElement.style.overflow="auto";
 			}
@@ -129,7 +116,6 @@ function nextImgG(){
 		numImg=0;
 	}
 	document.getElementById("imageToShow").innerHTML="<img class='imageLight' src="+ listRutaImgG[numImg]+">";
-	// console.log(numImg);
 }
 function prevImgG(){
 	numImg--;
@@ -137,7 +123,6 @@ function prevImgG(){
 		numImg=listRutaImgG.length-1;
 	}
 	document.getElementById("imageToShow").innerHTML="<img class='imageLight' src="+ listRutaImgG[numImg]+">";
-	// console.log(numImg);
 }
 
 function marcarPestana(contenedorAMostrar, tabClick){
