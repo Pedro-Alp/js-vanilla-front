@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sky Quest</title>
+	<link rel="stylesheet" href="CSS/Style.css">
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300&family=Kanit&display=swap" rel="stylesheet">
+	<!-- Iconos Fontawesome -->
+	<script src="https://kit.fontawesome.com/3181e17fbe.js" crossorigin="anonymous"></script>
+	<!-- Javascrip -->
+	<script src="JS/Scripts.js"></script>
+	<!-- libreria aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	<!-- Modal de bienvenida -->
+	<div id="modalBienvenida">
+		<div id="modalBoxB">
+			<h1>Bienvenido a la web Sky Quest</h1>
+			<button onclick="cerrarModalB()">Comienza</button>
+		</div>
+	</div>
+	<header id="encabezado">
+		<!-- Comienzo Menú horizontal -->
+		<nav id="navbar">
+			<!-- Logo -->
+			<a href="Index.html">
+				<img src="Media/Logo.png" alt="" id="logo">
+			</a>
+			<!-- Elementos del Menú Horizontal -->
+			<ul id="menu">
+				<li class="elementoMenu"><a href="#encabezado">Inicio</a></li>
+				<li class="elementoMenu"><a href="#destinos">Destinos</a>
+					<ul id="subMenu">
+						<li class="elemSubmenu"><a href="#destinos" onclick="marcarPestana('europa', 'tabEuropa')">Europa</a></li>
+						<li class="elemSubmenu"><a href="#destinos" onclick="marcarPestana('america', 'tabAmerica')">América</a></li>
+						<li class="elemSubmenu"><a href="#destinos" onclick="marcarPestana('asia', 'tabAsia')">Asia</a></li>
+						<li class="elemSubmenu"><a href="#destinos" onclick="marcarPestana('oceania', 'tabOceania')">Oceanía</a></li>
+					</ul>
+				</li>
+				<li class="elementoMenu"><a href="#galeria">Galería</a></li>
+				<li class="elementoMenu"><a href="#aboutus">About us</a></li>
+				<li class="elementoMenu"><a href="#servicios">Servicios</a></li>
+				<li class="elementoMenu"><a href="#extras">Extras</a></li>
+				<li class="elementoMenu"><a href="#info">+Info</a></li>
+			</ul>
+		</nav>
+		<h1 id="textohero">SKY QUEST</h1>
+		<h2 id="subtextohero">Vuela con nosotros a la aventura</h2>
+	</header>
+	<!-- Inicio de las Secciones -->
+	<section id="destinos">
+		<h2 class="tituloSeccion" data-aos="fade-up" data-aos-duration="1500">DESTINOS</h2>
+		<!-- Elementos pestaña -->
+		<div id="contenedorEtiquetaPestanas">
+			<p id="tabEuropa" class="etiquetaPestanas pestanaActiva" onclick="marcarPestana('europa', 'tabEuropa')">Europa</p>
+			<p id="tabAmerica" class="etiquetaPestanas" onclick="marcarPestana('america', 'tabAmerica')">América</p>
+			<p id="tabAsia" class="etiquetaPestanas" onclick="marcarPestana('asia', 'tabAsia')">Asia</p>
+			<p id="tabOceania" class="etiquetaPestanas" onclick="marcarPestana('oceania', 'tabOceania')">Oceanía</p>
+		</div>
+		<!-- Vuelos con imágenes y descripción -->
+		<div class="contenedorPestanas" id="europa">
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/ImgPestaña4.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/ImgPestaña3.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/ImgPestaña2.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/ImgPestaña1.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+		</div>
+		<div class="contenedorPestanas" id="america">
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/america1.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/america2.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/america3.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/america4.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+		</div>
+		<div class="contenedorPestanas" id="asia">
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/asia1.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/asia2.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/asia3.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/asia4.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+		</div>
+		<div class="contenedorPestanas" id="oceania">
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/oceania1.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/oceania2.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/oceania3.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+			<div class="vuelos">
+				<div class="imgVuelo">
+					<img src="Media/oceania4.jpg" alt="">
+				</div>
+				<p class="precio">Precio</p>
+				<p class="nomVuelo">Ciudad,Pais</p>
+			</div>
+		</div>
+	</section>
+	<section id="galeria">
+		<h2 class="tituloSeccion" data-aos="fade-up" data-aos-duration="1500">GALERÍA</h2>
+		<!-- Imágenes Galería -->
+		<div id="contenedorGaleria">
+			<img src="Media/ImgG1.jpg" alt="" class="imgGal" data-aos="fade-down-right">
+			<img src="Media/ImgG2.jpg" alt="" class="imgGal" data-aos="fade-down-right">
+			<img src="Media/ImgG3.jpg" alt="" class="imgGal" data-aos="fade-down-right">
+			<img src="Media/ImgG4.jpg" alt="" class="imgGal" data-aos="fade-down-right">
+			<img src="Media/ImgG5.jpg" alt="" class="imgGal" data-aos="fade-up-left">
+			<img src="Media/ImgG6.jpg" alt="" class="imgGal" data-aos="fade-up-left">
+			<img src="Media/ImgG7.jpg" alt="" class="imgGal" data-aos="fade-up-left">
+			<img src="Media/ImgG8.jpg" alt="" class="imgGal" data-aos="fade-up-left">
+		</div>
+		<div id="modalLight">
+			<div id="imageToShow">
+				
+			</div>
+			<button class="lbButtons lbbRight" onclick="nextImgG()">
+				<i class="fa-solid fa-angle-right"></i>
+			</button>
+			<button class="lbButtons lbbLeft" onclick="prevImgG()">
+				<i class="fa-solid fa-angle-left"></i>
+			</button>
+		</div>
+	</section>
+	<section id="aboutus">
+		<h2 class="tituloSeccion tituloBlanco" data-aos="fade-up" data-aos-duration="1500">About us</h2>
+		<div id="contenedorAbout">
+			<!-- Descripción About us -->
+			<div class="colAbout">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+			</div>
+			<div class="colAbout">
+				<!-- Imágenes de la sección About us -->
+				<div class="imgAbout">
+					<div class="mitadImg">
+						<div class="split">
+							<img src="Media/aboutus2.jpg" alt="" class="imgSplit" data-aos="flip-left">
+						</div>
+						<div class="split">
+							<img src="Media/aboutus3.jpg" alt="" class="imgSplit" data-aos="flip-left">
+						</div>	
+						
+					</div>
+					<div class="mitadImg">
+						<img src="Media/aboutus1.jpg" alt="" class="img1" data-aos="flip-right">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="servicios">
+		<h2 class="tituloSeccion" data-aos="fade-up" data-aos-duration="1500">SERVICIOS</h2>
+		<div id="contenedorServicios">
+			<!-- Servicios con imágen y descripción -->
+			<div class="serviciosCl">
+				<img src="Media/Servicio1.png" alt="" class="imgServ">
+				<p class="nomServ">Lorem ipsum</p>
+				<p class="descripServ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+			</div>
+			<div class="serviciosCl">
+				<img src="Media/Servicio2.png" alt="" class="imgServ">
+				<p class="nomServ">Lorem ipsum</p>
+				<p class="descripServ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+			</div>
+			<div class="serviciosCl">
+				<img src="Media/Servicio3.png" alt="" class="imgServ">
+				<p class="nomServ">Lorem ipsum</p>
+				<p class="descripServ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+			</div>
+		</div>
+	</section>
+	<section id="extras">
+		<h2 class="tituloSeccion" data-aos="fade-up" data-aos-duration="1500">Extras</h2>
+		<div id="contenedorExt">
+			<div class="splitExt">
+				<p id="descripExt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+			</div>
+			<div class="splitExt">
+				<video src="Media/videoExt.mp4" id="video" controls></video>
+			</div>
+		</div>
+	</section>
+	<section id="info">
+		<h2 class="tituloSeccion tituloBlanco" data-aos="fade-up" data-aos-duration="1500">+Información</h2>
+		<!-- Mapa -->
+		<div id="contenedorInfo">
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24304.295452061444!2d-3.69360704147271!3d40.40803262941541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262c501652cd%3A0x610543bed2cd3041!2sLa%20Casa%20Encendida!5e0!3m2!1ses!2ses!4v1679527419365!5m2!1ses!2ses" width="442" height="442" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<!-- Formulario +Info -->
+			<form action="" id="formu">
+				<p id="textoConsul">Consulta información:</p>
+				<input id="forNombre" type="text" name="Nombre" placeholder=" Nombre y Aplellidos" required>
+				<input id="forEmail" class="formSplit" type="email" name="correo" placeholder=" Correo" required>
+				<input id="forAsunto" class="formSplit" type="text" name="asunto" placeholder=" Asunto" required>
+				<input id="forMensaje" type="text" name="mensaje" placeholder=" Mensaje" required>
+				<input type="button" id="botonEnviar" onclick="modalInfo()" value="Enviar">
+			</form>
+		</div>
+		<!-- Modal de +Info -->
+	<div id="modalInfo">
+		<div id="modalBoxI">
+			<h1>Confirmación de solicitud de información</h1>
+			<p id="mensajeInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quo.</p>
+			<button onclick="cerrarModalI()">Volver</button>
+		</div>
+	</div>
+	</section>
+	<!-- Footer de la página -->
+	<footer id="pie">
+		<!-- Redes Sociales con imágen svg -->
+		<a href="https://www.instagram.com/"><i class="svg fa-brands fa-instagram"></i></a>
+		<a href="https://www.twitter.com/"><i class="svg fa-brands fa-twitter"></i></a>
+		<a href="https://www.facebook.com/"><i class="svg fa-brands fa-facebook-f"></i></a>
+	</footer>
+	<script>
+		modalBienvenida();
+		readyLight();
+	</script>
+	<script>
+  		AOS.init();
+	</script>
+</body>
+</html>
